@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquito</title>
+
+    <style>
+        body{
+            background: url('imagens/bg.jpg') no-repeat;
+            display:flex;
+            flex-flow:column nowrap;
+        }
+
+        div{
+            display: flex;
+            flex-flow:column nowrap;
+            align-items: center;
+            justify-content:center;
+        }
+
+        button{
+            width: 80px;
+            text-align:center;
+            margin-top:80px;
+            border:1px solid #5f3300;
+            border-radius:5px;
+            padding:10px;
+            font:icon;
+            background-color:#5f3300;
+            text-decoration: none;
+            color:#fff;
+        }
+
+        div#Form{
+            margin-top:30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label{
+            font-weight:bold;
+            color:#fff
+        }
+
+        select{
+            padding:7px;
+            border-radius:5px;
+            border:0px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <img src="imagens/game.png" alt="">
+
+        <div id="Form">
+            <label for="dificuldade">Dificuldade</label><br>
+
+            <select name="" id="dificuldade" >
+                <option value="1">Fácil</option>
+                <option value="2">Moderado</option>
+                <option value="3">Chuck Noris</option>
+            </select>
+        </div>
+
+        <button onclick="dificuldade()" href="jogo.html">Jogar</button>
+    </div>
+    
+    <script>
+        function dificuldade(){
+            let Dificuldade = document.querySelector('select').value
+            window.location.href = `jogo.html?${Dificuldade}`
+        }
+    </script>
+</body>
+</html>

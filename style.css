@@ -1,0 +1,50 @@
+@charset "UTF-8";
+*{
+    margin:0px;
+    padding:0px;
+    cursor:url('imagens/mata_mosca.png'), auto;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/bg.jpg');
+    background-size:100%;
+    background-repeat:no-repeat;
+    
+}
+
+.mosquito1{
+    position: absolute;
+    width:50px;
+    height: 50px;
+}
+
+.mosquito2{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.mosquito3{
+    position: absolute;
+    width:86px;
+    height: 86px;
+}
+
+#painel{
+    position:absolute;
+    width: 200px;
+    padding:10px;
+    bottom:0px;
+}
+
+#time{
+    font-size:1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+}
+
+#life{
+    display:inline-block;
+}
