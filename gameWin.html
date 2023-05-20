@@ -9,6 +9,7 @@
     <style>
         body{
             background:#fff url('imagens/bg.jpg') no-repeat;
+            background-size:auto;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
@@ -32,6 +33,24 @@
             background-color:#5f3300;
             text-decoration: none;
             color:#fff;          
+        }
+
+        @media (orientation:portrait){
+            img{
+                margin-top:100px;
+                width: 70%;
+            }
+
+            nav{
+                width: 70%;
+                text-align: center;
+            }
+
+            a{
+                width: 12%;
+                font-size:100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
